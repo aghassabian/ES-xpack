@@ -23,8 +23,6 @@ To run using Ansible add the following section to ansible role or playbook:
       - "9200:9200"
       - "9300:9300"
     env:
-        ES_JAVA_OPTS: "-Xms512m -Xmx1m"
+        ES_JAVA_OPTS: "-Xms512m -Xmx1g"
 ```
 elastic network should have already been created.
-
- 
