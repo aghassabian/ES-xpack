@@ -6,7 +6,7 @@ To run directly on host using ```docker run``` command, should set both the JVM 
 ```bash
 docker run -itd --name elasticsearch -p 9200:9200 -p 9300:9300 -e "ES_JAVA_OPT=-Xms512m -Xmx1g" aghassabian/es-xpack
 ```
-The size of allocated memory to JVM is depend on your usage and system specification.
+The size of allocated memory to JVM depends on your usage and system specification.
 
 # Run using Ansible
 To run using Ansible add the following section to ansible role or playbook:
