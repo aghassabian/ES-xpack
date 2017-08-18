@@ -8,7 +8,7 @@ docker run -itd --name elasticsearch -p 9200:9200 -p 9300:9300 -e "ES_JAVA_OPT=-
 ```
 The size of allocated memory to JVM is depend on your usage and system specification.
 
-# run using Ansible
+# Run using Ansible
 To run using Ansible add the following section to ansible role or playbook:
 ```yaml
 
@@ -25,4 +25,4 @@ To run using Ansible add the following section to ansible role or playbook:
     env:
         ES_JAVA_OPTS: "-Xms512m -Xmx1g"
 ```
-elastic network should have already been created.
+elastic network should have already been created and defined as variable or could be insert directly in network part.
